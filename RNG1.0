@@ -1,6 +1,6 @@
 // 11/12/19
 // Version 1.0
-// Generates a number within a range of your choosing
+// Generates a number within a range of your choosing.
 
 import java.util.Scanner;
 
