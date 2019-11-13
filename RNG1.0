@@ -1,0 +1,34 @@
+// 11/12/19
+// Version 1.0
+// Generates a number within a range of your choosing
+
+import java.util.Scanner;
+
+public class RandomNumberGenerator {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Guess the correct number: ");
+		
+		int x = sc.nextInt();
+		int count = 1;
+		double random = Math.ceil(Math.random() * ((9 - 1) + 1)+ 1);
+    //                                       ((Max Min) Min) Min)
+		
+		while (x != random) {
+			System.out.print("Wrong number. Try again: ");
+			x = sc.nextInt();
+			count++;
+			
+		}
+		if (count == 1) {
+			System.out.println("You got it in 1 try!");
+			
+		} else {
+			System.out.println("You got it in " + count + " tries!");
+			
+		}
+		
+	}
+	
+}
